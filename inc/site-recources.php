@@ -6,7 +6,6 @@ function bn_script_resourses()
 {
     //name, absolute path, dependencies, version, in_footer
     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), '3.7.1', true);
-    wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/a9f08520e7.js', array(), '6.7.2', true);
 
     wp_register_script(
         'custom_script',
