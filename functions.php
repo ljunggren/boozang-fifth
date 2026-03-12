@@ -46,16 +46,6 @@ function bn_defer_jquery($tag, $handle)
 }
 add_filter('script_loader_tag', 'bn_defer_jquery', 10, 2);
 
-// Load Bootstrap grid CSS non-render-blocking (only used for layout, not critical paint)
-function bn_async_bootstrap_css($html, $handle)
-{
-    if ($handle === 'bootstrap-css') {
-        $html = str_replace("media='all'", "media='print' onload=\"this.media='all'\"", $html);
-    }
-    return $html;
-}
-add_filter('style_loader_tag', 'bn_async_bootstrap_css', 10, 2);
-
 // Preconnect to Google Fonts to speed up font loading
 function bn_preconnect_google_fonts()
 {
