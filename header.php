@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content=" <?php bloginfo('description'); ?>">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(); ?>
-    </title>
     <?php wp_head(); ?>
 </head>
 

@@ -2,6 +2,7 @@
 //Featured Image Support
 function bn_theme_setup()
 {
+    add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     //width, height, hard-or soft cropping(hard)
     add_image_size('small-thumbnail', 230, 144, true);
