@@ -30,7 +30,7 @@ if (get_row_layout() == 'two_columns_img_or_text') { ?>
                                         <?php $alt_text = get_post_meta($img_id, '_wp_attachment_image_alt', true); ?>
 
                                         <img class="pict" src="<?php echo $image[0]; ?>" alt="<?php echo $alt_text; ?>"
-                                            title="Click on image to enlarge" />
+                                            title="Click on image to enlarge" loading="lazy" />
                                         <span class="alt_caption"><?php echo $alt_text; ?></span>
 
                                     </div>
