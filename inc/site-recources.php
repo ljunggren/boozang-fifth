@@ -23,7 +23,7 @@ add_action('wp_enqueue_scripts', 'bn_script_resourses');
 function bn_style_resourses()
 {
     //name, absolute path, dependencies, version, media
-    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css');
+    wp_enqueue_style('bootstrap-css', get_stylesheet_directory_uri() . '/assets/css/bootstrap-grid.min.css', array(), '1.0.0');
 
     wp_enqueue_style('style', get_stylesheet_uri(), array(), '1.0.0', 'all');
 
