@@ -33,16 +33,28 @@ function bn_dequeue_forum_assets()
 }
 add_action('wp_enqueue_scripts', 'bn_dequeue_forum_assets', 20);
 
-// Move jQuery to footer to eliminate render-blocking JS
-function bn_move_jquery_to_footer()
+// Add defer to jQuery and jquery-migrate to eliminate render-blocking JS
+function bn_defer_jquery($tag, $handle)
 {
     if (is_admin()) {
-        return;
+        return $tag;
     }
-    wp_scripts()->add_data('jquery-core', 'group', 1);
-    wp_scripts()->add_data('jquery-migrate', 'group', 1);
+    if ($handle === 'jquery-core' || $handle === 'jquery-migrate') {
+        return str_replace(' src=', ' defer src=', $tag);
+    }
+    return $tag;
 }
-add_action('wp_enqueue_scripts', 'bn_move_jquery_to_footer', 20);
+add_filter('script_loader_tag', 'bn_defer_jquery', 10, 2);
+
+// Load Bootstrap grid CSS non-render-blocking (only used for layout, not critical paint)
+function bn_async_bootstrap_css($html, $handle)
+{
+    if ($handle === 'bootstrap-css') {
+        $html = str_replace("media='all'", "media='print' onload=\"this.media='all'\"", $html);
+    }
+    return $html;
+}
+add_filter('style_loader_tag', 'bn_async_bootstrap_css', 10, 2);
 
 // Preconnect to Google Fonts to speed up font loading
 function bn_preconnect_google_fonts()

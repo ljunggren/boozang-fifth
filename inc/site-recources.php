@@ -31,12 +31,13 @@ function bn_style_resourses()
 }
 add_action('wp_enqueue_scripts', 'bn_style_resourses');
 
-//Fonts
+//Fonts — load async to avoid render-blocking
 function google_fonts()
 {
-    //Av någon anledning knasar det med wp_enqueue_script
 ?>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap" rel="stylesheet"></noscript>
 <?php
 }
 add_action('wp_head', 'google_fonts');
