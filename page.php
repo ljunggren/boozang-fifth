@@ -13,17 +13,10 @@
     if ($theParent) {
         $findChildrenOf = $theParent;
         $parent_active_class = '';
-        // echo ' $theParent, findChildrenOf:' . $findChildrenOf;
-        // echo ', $theParent, theParent :' . $theParent;
-        // echo ', id:  ' . get_the_ID();
     } else {
         $findChildrenOf = get_the_ID();
         $parent_active_class = 'parent_active';
-        // echo 'findChildrenOf: ' . $findChildrenOf;
-        // echo ' , theParent:' . $theParent;
-        // echo ', id:  ' . get_the_ID();
     }
-    // echo $parent_active_class;
     $pagesArray = get_pages(array(
         'child_of' => get_the_ID()
     ));

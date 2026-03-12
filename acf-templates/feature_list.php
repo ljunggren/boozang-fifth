@@ -36,7 +36,6 @@ if (get_row_layout() == 'feature_list') {
                         <?php
                             }
                         } ?>
-                        </ul>
                     </div>
                 </div>
             </div>

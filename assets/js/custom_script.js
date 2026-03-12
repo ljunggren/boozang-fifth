@@ -41,7 +41,6 @@ jQuery(document).ready(function ($) {
     $(this)
       .children("a")
       .attr("aria-expanded", function (index, attr) {
-        console.log("expanded", attr);
         return attr == "true" ? "false" : "true";
       });
 
@@ -137,4 +136,3 @@ jQuery(document).ready(function ($) {
   //   }
   // });
 });
-document.ready;

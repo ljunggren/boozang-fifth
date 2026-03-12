@@ -21,7 +21,7 @@
                                          <header class="pricing_card_header">
                                              <div class="">
                                                  <h2 class="smaller_size_text"><?php echo $heading; ?></h2>
-                                                 <h3 class="smaller_size_text"><?php echo $text; ?></ph3>
+                                                 <h3 class="smaller_size_text"><?php echo $text; ?></h3>
                                              </div>
                                          </header>
                                          <main>

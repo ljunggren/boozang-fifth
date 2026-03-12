@@ -17,6 +17,7 @@ $text = get_sub_field('text');?>
             </div>
         </div>
     </div>
+</section>
 <?php
 }
 ?>

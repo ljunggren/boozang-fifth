@@ -5,7 +5,7 @@
 function bn_script_resourses()
 {
     //name, absolute path, dependencies, version, in_footer
-    wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '1.12.4', true);
+    wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js', array(), '3.7.1', true);
     wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/a9f08520e7.js', array(), '6.7.2', true);
 
     wp_register_script(
@@ -36,7 +36,7 @@ function google_fonts()
 {
     //Av någon anledning knasar det med wp_enqueue_script
 ?>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap" rel="stylesheet">
 <?php
 }
 add_action('wp_head', 'google_fonts');

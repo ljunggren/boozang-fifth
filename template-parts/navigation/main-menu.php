@@ -13,7 +13,7 @@ if (is_home() || is_archive()) {
                     <a class="logo" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Boozang home page">
                         <!--extra double size image for retina-->
                         <?php
-                        if ($color === 'darkblue' | $color === 'blue') { ?>
+                        if ($color === 'darkblue' || $color === 'blue') { ?>
                           <img
                             src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/boozang_logo_reverse.png"
                             srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/boozang_logo_reverse@2x.png 325w"

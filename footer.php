@@ -90,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="col-md-112 col-xl-8">
+            <div class="col-md-12 col-xl-8">
                 <div class="row align-items-start links">
                     <?php
                     if (function_exists('acf_add_options_page')) {
@@ -129,7 +129,7 @@
                 <div class="col-10">
                     <div class="copy">
                         <p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?> INC. ALL RIGHTS RESERVED. </p>
-                        <p> Theme by <a href="http://frilans.karinljunggren.com/" target="_blank" rel="noopener noreferrer" aria-label="Karin Ljunggren Home Page"><span class="colored_blue_part">Karin Ljunggren</span></a> </p>
+                        <p> Theme by <a href="https://frilans.karinljunggren.com/" target="_blank" rel="noopener noreferrer" aria-label="Karin Ljunggren Home Page"><span class="colored_blue_part">Karin Ljunggren</span></a> </p>
                     </div>
                 </div>
                 <div class="col-2">
