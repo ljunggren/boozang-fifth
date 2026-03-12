@@ -31,14 +31,11 @@ function bn_style_resourses()
 }
 add_action('wp_enqueue_scripts', 'bn_style_resourses');
 
-//Fonts
-function google_fonts()
+//Fonts — self-hosted Roboto (eliminates render-blocking Google Fonts request)
+function bn_roboto_font()
 {
-    //Av någon anledning knasar det med wp_enqueue_script
-?>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap" rel="stylesheet">
-<?php
+    wp_enqueue_style('roboto-font', get_stylesheet_directory_uri() . '/assets/css/roboto.css', array(), '1.0.0');
 }
-add_action('wp_head', 'google_fonts');
+add_action('wp_enqueue_scripts', 'bn_roboto_font');
 
 ?>

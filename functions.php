@@ -44,14 +44,6 @@ function bn_move_jquery_to_footer()
 }
 add_action('wp_enqueue_scripts', 'bn_move_jquery_to_footer', 20);
 
-// Preconnect to Google Fonts to speed up font loading
-function bn_preconnect_google_fonts()
-{
-    echo '<link rel="preconnect" href="https://fonts.googleapis.com">' . "\n";
-    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
-}
-add_action('wp_head', 'bn_preconnect_google_fonts', 1);
-
 // Defer GDPR cookie CSS — banner renders after page load
 function bn_defer_gdpr_css()
 {
