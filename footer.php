@@ -20,11 +20,11 @@
             </div>
             <div class="capterra_img bigger">
                 <a href="https://www.capterra.com/p/166146/Boozang/reviews/">
-                    <img border="0" src="https://brand-assets.capterra.com/badge/f2d59cba-8965-4346-86cc-255b859ccbc1.svg" alt="Boozang Reviews" />
+                    <img border="0" src="https://brand-assets.capterra.com/badge/f2d59cba-8965-4346-86cc-255b859ccbc1.svg" alt="Boozang Reviews" loading="lazy" />
                 </a>
             </div>
             <div class="capterra_img">
-                <a href="https://www.getapp.com/it-management-software/a/boozang/reviews/"> <img border="0" src="https://brand-assets.getapp.com/badge/8fc04a2f-c58e-40bd-8641-dac27b3b2ac3.png" /></a>
+                <a href="https://www.getapp.com/it-management-software/a/boozang/reviews/"> <img border="0" src="https://brand-assets.getapp.com/badge/8fc04a2f-c58e-40bd-8641-dac27b3b2ac3.png" loading="lazy" /></a>
             </div>
         </div>
 
@@ -54,7 +54,7 @@
             <div class="col-md-6 col-xl-3">
                 <div class="logo">
                     <a href="<?php echo home_url() ?>" class="logo" aria-label="Boozang home page">
-                        <img class="logo_img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/boozang_logo_reverse.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/boozang_logo_reverse@2x.png 325w" width="208" height="51" alt="Boozang home page" />
+                        <img class="logo_img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/boozang_logo_reverse.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/boozang_logo_reverse@2x.png 325w" width="208" height="51" alt="Boozang home page" loading="lazy" />
                     </a>
                 </div>
                 <div class="customer_contact">
