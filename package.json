@@ -1,0 +1,16 @@
+{
+  "name": "bz-homepage",
+  "version": "1.0.0",
+  "description": "A reusable template for bootstrapping AI agent infrastructure in any project. Based on battle-tested patterns from production projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
+  }
+}
