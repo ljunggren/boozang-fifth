@@ -24,7 +24,7 @@
                 </a>
             </div>
             <div class="capterra_img">
-                <a href="https://www.getapp.com/it-management-software/a/boozang/reviews/"> <img border="0" src="https://brand-assets.getapp.com/badge/8fc04a2f-c58e-40bd-8641-dac27b3b2ac3.png" loading="lazy" /></a>
+                <a href="https://www.getapp.com/it-management-software/a/boozang/reviews/"> <img border="0" src="https://brand-assets.getapp.com/badge/8fc04a2f-c58e-40bd-8641-dac27b3b2ac3.png" alt="Boozang GetApp Reviews" loading="lazy" /></a>
             </div>
         </div>
 

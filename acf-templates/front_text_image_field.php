@@ -43,7 +43,7 @@ if (get_row_layout() == 'front_text_image_field') {
                                 <?php $image = wp_get_attachment_image_src($img_id, 'full'); ?>
                                 <?php $alt_text = get_post_meta($img_id, '_wp_attachment_image_alt', true); ?>
 
-                                <img src="<?php echo $image[0]; ?>" alt="<?php echo $alt_text; ?>" class="pict" loading="lazy" />
+                                <img src="<?php echo $image[0]; ?>" alt="<?php echo $alt_text; ?>" class="pict" loading="lazy" width="<?php echo $image[1]; ?>" height="<?php echo $image[2]; ?>" />
                                 <span class="alt_caption"><?php echo $alt_text; ?></span>
                             </div>
                         <?php

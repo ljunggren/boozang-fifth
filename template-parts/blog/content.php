@@ -13,7 +13,7 @@ $post_class = 'card_container';
     } ?>
     <div class="<?php echo $post_class; ?>">
             <div class="img_container">
-                <?php the_post_thumbnail(); ?>
+                <?php the_post_thumbnail('post-thumbnail', array('alt' => get_the_title())); ?>
             </div>
 
         <!-- link if blog page  -->

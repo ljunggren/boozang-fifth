@@ -88,7 +88,7 @@
                             <?php $image = wp_get_attachment_image_src($header_image_front, 'full'); ?>
                             <?php $alt_text = get_post_meta($header_image_front, '_wp_attachment_image_alt', true); ?>
 
-                            <img src="<?php echo $image[0]; ?>" alt="<?php echo $alt_text; ?>" class="header_image_front" />
+                            <img src="<?php echo $image[0]; ?>" alt="<?php echo $alt_text; ?>" class="header_image_front" width="<?php echo $image[1]; ?>" height="<?php echo $image[2]; ?>" />
                         </div> <?php } ?>
                 </div>
             </div>
